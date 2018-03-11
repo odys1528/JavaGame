@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.odys.javagame.GameActivity">
+
+    <Button
+        android:id="@+id/quit_button"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/quit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.945" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="225dp"
+        android:layout_height="213dp"
+        android:text="@string/test_long_text"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.339" />
+
+    <LinearLayout
+        android:layout_width="375dp"
+        android:layout_height="300dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.874"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.487">
+
+        <RelativeLayout
+            android:layout_width="272dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/rose_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/rose" />
+
+            <Button
+                android:id="@+id/north_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_above="@+id/rose_image"
+                android:layout_alignStart="@+id/south_button"
+                android:text="@string/north" />
+
+            <Button
+                android:id="@+id/south_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/rose_image"
+                android:layout_centerHorizontal="true"
+                android:text="@string/south" />
+
+            <Button
+                android:id="@+id/east_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="@string/east" />
+
+            <Button
+                android:id="@+id/west_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="@string/west" />
+
+            <Button
+                android:id="@+id/nw_button"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_alignStart="@+id/rose_image"
+                android:layout_alignTop="@+id/rose_image"
+                android:layout_marginTop="11dp"
+                android:text="@string/north_west" />
+
+            <Button
+                android:id="@+id/ne_button"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_alignEnd="@+id/rose_image"
+                android:layout_alignTop="@+id/nw_button"
+                android:text="@string/north_east" />
+
+            <Button
+                android:id="@+id/sw_button"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/rose_image"
+                android:layout_alignStart="@+id/rose_image"
+                android:layout_marginBottom="13dp"
+                android:text="@string/south_west" />
+
+            <Button
+                android:id="@+id/se_button"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_alignEnd="@+id/rose_image"
+                android:layout_alignTop="@+id/sw_button"
+                android:text="@string/south_east" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="52dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/up_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/up" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="196dp"
+                app:srcCompat="@drawable/arrow" />
+
+            <Button
+                android:id="@+id/down_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/down" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"></LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
